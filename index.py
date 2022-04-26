@@ -174,5 +174,3 @@ def train():
         return jsonify({"error": "very few images to train the model please add more images"})
       retrain_model(my_dict["images"])
       return "successfully trained"
-
-app.run(debug=True)
